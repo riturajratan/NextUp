@@ -10,7 +10,7 @@ git init
 git add .
 git commit -m "Initial commit"
 git branch -M main
-git remote add origin https://github.com/YOUR_USERNAME/NextUp.git
+git remote add origin https://github.com/riturajratan/NextUp.git
 git push -u origin main
 ```
 
@@ -23,7 +23,7 @@ git push -u origin main
 ### 3. Access Your Site
 Your documentation will be available at:
 ```
-https://YOUR_USERNAME.github.io/NextUp/
+https://riturajratan.com/NextUp/
 ```
 
 ## 🎯 Use as GitHub Template
@@ -38,19 +38,19 @@ https://YOUR_USERNAME.github.io/NextUp/
 ### Users Can Now:
 
 #### Option 1: Use Template Button
-1. Visit `https://github.com/YOUR_USERNAME/NextUp`
+1. Visit `https://github.com/riturajratan/NextUp`
 2. Click **"Use this template"** button
 3. Create a new repository with all NextUp files
 
 #### Option 2: Direct Link
 Share this link for one-click setup:
 ```
-https://github.com/YOUR_USERNAME/NextUp/generate
+https://github.com/riturajratan/NextUp/generate
 ```
 
 #### Option 3: Clone and Run Script
 ```bash
-git clone https://github.com/YOUR_USERNAME/NextUp.git
+git clone https://github.com/riturajratan/NextUp.git
 cd NextUp
 ./create-boilerplate.sh my-app
 ```

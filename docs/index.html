@@ -17,6 +17,9 @@
     <!-- Syntax Highlighting -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
     
+    <!-- Configuration -->
+    <script src="config.js"></script>
+    
     <style>
         body { font-family: 'Inter', sans-serif; }
         .gradient-text {
@@ -54,7 +57,7 @@
                     <a href="#features" class="text-gray-600 hover:text-gray-900">Features</a>
                     <a href="#quick-start" class="text-gray-600 hover:text-gray-900">Quick Start</a>
                     <a href="#docs" class="text-gray-600 hover:text-gray-900">Docs</a>
-                    <a href="https://github.com/yourusername/NextUp" target="_blank" class="inline-flex items-center space-x-2 bg-gray-900 text-white px-4 py-2 rounded-lg hover:bg-gray-800">
+                    <a id="github-link" href="#" target="_blank" class="inline-flex items-center space-x-2 bg-gray-900 text-white px-4 py-2 rounded-lg hover:bg-gray-800">
                         <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                             <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
                         </svg>
@@ -82,7 +85,7 @@
                 <button onclick="showQuickStart()" class="px-8 py-4 bg-gradient-to-r from-purple-600 to-blue-600 text-white rounded-lg font-semibold hover:shadow-xl transition-shadow">
                     Get Started in 2 Minutes →
                 </button>
-                <a href="https://github.com/yourusername/NextUp/generate" target="_blank" class="px-8 py-4 bg-white border-2 border-gray-300 rounded-lg font-semibold hover:border-gray-400 transition-colors">
+                <a id="template-link" href="#" target="_blank" class="px-8 py-4 bg-white border-2 border-gray-300 rounded-lg font-semibold hover:border-gray-400 transition-colors">
                     Use GitHub Template
                 </a>
             </div>
@@ -178,7 +181,7 @@
                         <h3 class="text-xl font-semibold">Clone and Run Setup Script</h3>
                     </div>
                     <div class="relative">
-                        <pre class="language-bash"><code>git clone https://github.com/yourusername/NextUp.git
+                        <pre class="language-bash"><code id="clone-command">git clone https://github.com/riturajratan/NextUp.git
 cd NextUp
 chmod +x create-boilerplate.sh
 ./create-boilerplate.sh my-awesome-app</code></pre>
@@ -372,22 +375,22 @@ cp .env.example .env
             <h2 class="text-4xl font-bold text-center mb-12">Complete Documentation</h2>
             
             <div class="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-                <a href="https://github.com/yourusername/NextUp/blob/main/AUTH_GUIDE.md" target="_blank" class="bg-white p-6 rounded-lg hover:shadow-lg transition-shadow">
+                <a id="auth-guide-link" href="#" target="_blank" class="bg-white p-6 rounded-lg hover:shadow-lg transition-shadow">
                     <h3 class="text-xl font-semibold mb-2">Authentication Guide</h3>
                     <p class="text-gray-600">Complete guide for implementing auth flows, protecting routes, and managing users.</p>
                 </a>
                 
-                <a href="https://github.com/yourusername/NextUp/tree/main/templates/app/api/examples" target="_blank" class="bg-white p-6 rounded-lg hover:shadow-lg transition-shadow">
+                <a id="api-examples-link" href="#" target="_blank" class="bg-white p-6 rounded-lg hover:shadow-lg transition-shadow">
                     <h3 class="text-xl font-semibold mb-2">API Examples</h3>
                     <p class="text-gray-600">Working examples of protected and public API routes with best practices.</p>
                 </a>
                 
-                <a href="https://github.com/yourusername/NextUp/blob/main/templates/lib/auth-helpers.ts" target="_blank" class="bg-white p-6 rounded-lg hover:shadow-lg transition-shadow">
+                <a id="auth-helpers-link" href="#" target="_blank" class="bg-white p-6 rounded-lg hover:shadow-lg transition-shadow">
                     <h3 class="text-xl font-semibold mb-2">Auth Helpers</h3>
                     <p class="text-gray-600">Server-side utilities for authentication and authorization.</p>
                 </a>
                 
-                <a href="https://github.com/yourusername/NextUp/blob/main/templates/hooks/use-current-user.ts" target="_blank" class="bg-white p-6 rounded-lg hover:shadow-lg transition-shadow">
+                <a id="custom-hooks-link" href="#" target="_blank" class="bg-white p-6 rounded-lg hover:shadow-lg transition-shadow">
                     <h3 class="text-xl font-semibold mb-2">Custom Hooks</h3>
                     <p class="text-gray-600">React hooks for client-side authentication state management.</p>
                 </a>
@@ -401,10 +404,10 @@ cp .env.example .env
             <h2 class="text-4xl font-bold mb-6">Ready to Ship Your Next App?</h2>
             <p class="text-xl mb-8 opacity-90">Join developers who are building faster with NextUp</p>
             <div class="flex flex-col md:flex-row gap-4 justify-center">
-                <a href="https://github.com/yourusername/NextUp" target="_blank" class="px-8 py-4 bg-white text-purple-600 rounded-lg font-semibold hover:shadow-xl transition-shadow">
+                <a id="cta-github-link" href="#" target="_blank" class="px-8 py-4 bg-white text-purple-600 rounded-lg font-semibold hover:shadow-xl transition-shadow">
                     Get NextUp Free →
                 </a>
-                <a href="https://github.com/yourusername/NextUp/stargazers" target="_blank" class="px-8 py-4 bg-purple-700 text-white rounded-lg font-semibold hover:bg-purple-800 transition-colors">
+                <a id="star-link" href="#" target="_blank" class="px-8 py-4 bg-purple-700 text-white rounded-lg font-semibold hover:bg-purple-800 transition-colors">
                     ⭐ Star on GitHub
                 </a>
             </div>
@@ -420,10 +423,10 @@ cp .env.example .env
                     <p class="mt-2">Ship faster with production-ready boilerplate</p>
                 </div>
                 <div class="flex space-x-6 mt-6 md:mt-0">
-                    <a href="https://github.com/yourusername/NextUp" target="_blank" class="hover:text-white">GitHub</a>
-                    <a href="https://github.com/yourusername/NextUp/blob/main/AUTH_GUIDE.md" target="_blank" class="hover:text-white">Documentation</a>
-                    <a href="https://github.com/yourusername/NextUp/issues" target="_blank" class="hover:text-white">Support</a>
-                    <a href="https://twitter.com/yourusername" target="_blank" class="hover:text-white">Twitter</a>
+                    <a id="footer-github-link" href="#" target="_blank" class="hover:text-white">GitHub</a>
+                    <a id="footer-docs-link" href="#" target="_blank" class="hover:text-white">Documentation</a>
+                    <a id="footer-support-link" href="#" target="_blank" class="hover:text-white">Support</a>
+                    <a id="footer-twitter-link" href="#" target="_blank" class="hover:text-white">Twitter</a>
                 </div>
             </div>
             <div class="mt-8 pt-8 border-t border-gray-800 text-center">
@@ -454,6 +457,33 @@ cp .env.example .env
         function showQuickStart() {
             document.getElementById('quick-start').scrollIntoView({ behavior: 'smooth' });
         }
+
+        // Initialize links with config when DOM loads
+        document.addEventListener('DOMContentLoaded', function() {
+            if (window.NEXTUP_CONFIG) {
+                const config = window.NEXTUP_CONFIG;
+                
+                // Update all GitHub links
+                document.getElementById('github-link').href = config.githubUrl;
+                document.getElementById('template-link').href = config.templateUrl;
+                document.getElementById('auth-guide-link').href = config.authGuideUrl;
+                document.getElementById('api-examples-link').href = config.apiExamplesUrl;
+                document.getElementById('auth-helpers-link').href = config.authHelpersUrl;
+                document.getElementById('custom-hooks-link').href = config.customHooksUrl;
+                document.getElementById('cta-github-link').href = config.githubUrl;
+                document.getElementById('star-link').href = config.starUrl;
+                document.getElementById('footer-github-link').href = config.githubUrl;
+                document.getElementById('footer-docs-link').href = config.authGuideUrl;
+                document.getElementById('footer-support-link').href = config.issuesUrl;
+                document.getElementById('footer-twitter-link').href = config.social.twitter;
+                
+                // Update clone command
+                document.getElementById('clone-command').textContent = `git clone ${config.githubUrl}.git
+cd NextUp
+chmod +x create-boilerplate.sh
+./create-boilerplate.sh my-awesome-app`;
+            }
+        });
 
         // Smooth scroll for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
