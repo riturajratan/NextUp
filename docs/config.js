@@ -11,7 +11,7 @@ const NEXTUP_CONFIG = {
     // Social Links
     social: {
         twitter: 'https://twitter.com/riturajratan',
-        website: 'https://riturajratan.com'
+        website: 'https://next-up.maddyzone.com'
     },
     
     // Project Information
